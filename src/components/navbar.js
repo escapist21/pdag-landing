@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Link } from 'gatsby'
-
+import { css } from '@emotion/react'
 import logo from '../assets/logos/PDAG LOGO.png'
 
 const Navbar = () => {
@@ -17,11 +17,24 @@ const Navbar = () => {
           {/* <!--The Hamburger will go here --> */}
           <div className='navbar-menu'>
             <div className='navbar-end'>
-              <Link className='navbar-item' to='/'>HOME</Link>
-              <Link className='navbar-item' to='/who-we-are'>WHO WE ARE</Link>
-              <Link className='navbar-item' to='/our-work'>OUR WORK</Link>
-              <Link className='navbar-item' to='/our-reflections'>OUR REFLECTIONS</Link>
-              <Link className='navbar-item' to='/contact-us'>CONTACT US</Link>
+              <Link className='navbar-item has-text-weight-medium' to='/'>HOME</Link>
+              <div className='navbar-item has-dropdown is-hoverable'>
+                <Link className='navbar-link has-text-weight-medium' to='#'>WHO WE ARE</Link>
+                <div className='navbar-dropdown'>
+                  <Link className='navbar-item is-uppercase has-text-weight-normal' to='#' >our team</Link>
+                  <Link className='navbar-item is-uppercase has-text-weight-normal' to='#' >overview</Link>
+                </div>
+              </div>
+              
+              <Link className='navbar-item has-text-weight-medium' to='/our-work'>OUR WORK</Link>
+              <div className='navbar-item has-dropdown is-hoverable'>
+                <Link className='navbar-link is-uppercase has-text-weight-medium' to='#'>our reflections</Link>
+                <div className='navbar-dropdown'>
+                  <Link className='navbar-item is-uppercase has-text-weight-normal' to='#' >blog</Link>
+                  <Link className='navbar-item is-uppercase has-text-weight-normal' to='#' >publications</Link>
+                </div>
+              </div>
+              <Link className='navbar-item has-text-weight-medium' to='#'>CONTACT US</Link>
             </div>
           </div>
         </div>

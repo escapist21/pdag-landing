@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
 
 // If need, change your variables before importing Bulma
@@ -11,9 +11,13 @@ $navbar-item-color: #6b3234;
 $navbar-item-hover-background-color: #6b3234;
 $navbar-item-hover-color: white;
 $navbar-item-img-max-height: 6rem;
+$navbar-dropdown-arrow: orange;
 $footer-background-color: #6b3234;
 $footer-color: white;
 $menu-label-color: white;
 $menu-item-hover-color: white;
+$divider-background-color: #6b3234;
 
 @import "~bulma/bulma.sass";
+@import "~@creativebulma/bulma-divider";
+

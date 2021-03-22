@@ -4,15 +4,17 @@ import Layout from '../components/layout'
 
 import Carousel from '../components/carousel'
 import Partners from '../components/partners'
-
+import Expertise from "../components/expertise"
 
 import  '../styles/global.scss'
+
 
 
 const HomePage = () => {
   return (
     <Layout>
       <Carousel />
+      <Expertise />
       <Partners />
       <section className='section'>
         <div className='container'>

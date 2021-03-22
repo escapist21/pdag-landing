@@ -20,7 +20,7 @@ const LogoHover = css`
 const Partners = () =>{
     return(
     <div>
-        <section className='section'>
+        <section className='section p-6'>
         {/* Logos style 2 */}
         <div className='container'>
           <nav className="level">
