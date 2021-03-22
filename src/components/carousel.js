@@ -1,6 +1,6 @@
 import React from 'react'
 
-import wall1 from '../assets/walls/WALL 2 A.png'
+import wall1 from '../assets/walls/WALL 2 A compressed.jpg'
 
 const Carousel = () => {
     return(
