@@ -17,6 +17,18 @@ const LogoHover = css`
   }
 `
 
+const PartnerLogo = (props) => {
+  return(
+    <div className="level-item has-text-centered">
+      <div>
+        <figure className='image is-96x96'>
+          <img className='is-rounded' src={ props.src } alt="" css={ LogoHover }/>
+        </figure>
+      </div>
+    </div>
+  )
+}
+
 const Partners = () =>{
     return(
     <div>
@@ -24,62 +36,14 @@ const Partners = () =>{
         {/* Logos style 2 */}
         <div className='container'>
           <nav className="level">
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={JharGov} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={Twitter} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={ISB} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={LSE} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={IGC} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={GSU} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={UNSW} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-              <figure className='image is-96x96'>
-                  <img className='is-rounded' src={JNU} alt="" css={LogoHover}/>
-                </figure>
-              </div>
-            </div>
+            <PartnerLogo src={JharGov}/>
+            <PartnerLogo src={Twitter}/>
+            <PartnerLogo src={ISB}/>
+            <PartnerLogo src={LSE}/>
+            <PartnerLogo src={IGC}/>
+            <PartnerLogo src={GSU}/>
+            <PartnerLogo src={UNSW}/>
+            <PartnerLogo src={JNU}/>
           </nav>
         </div>
       </section>
